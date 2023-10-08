@@ -9,28 +9,44 @@
         body {
             margin: 0 auto;
             max-width: 800px;
-            padding: 0 20px;
+            padding: 20px;
+            /* Increased padding for better spacing */
             font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            /* Light background color */
         }
 
         h2 {
-            background-color: #4CAF50;
+            background-color: #3498db;
+            /* Blue header background color */
             color: white;
-            padding: 10px;
+            padding: 20px;
+            /* Increased padding for a more prominent header */
             text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            /* Slight box shadow */
         }
 
         .container {
-            border: 2px solid #dedede;
-            background-color: #f1f1f1;
-            border-radius: 5px;
-            padding: 10px;
-            margin: 10px 0;
+            border: 2px solid #ddd;
+            /* Softer border color */
+            background-color: #ffffff;
+            /* White container background */
+            border-radius: 10px;
+            /* Rounded corners for a modern look */
+            padding: 20px;
+            /* Increased padding for content */
+            margin: 20px 0;
+            /* Increased margin for better separation */
             overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            /* Slight box shadow */
         }
 
         .darker {
-            background-color: #ddd;
+            background-color: #f8f8f8;
+            /* Light gray background for darker containers */
         }
 
         .container::after {
@@ -56,19 +72,22 @@
         .time-right,
         .time-left {
             float: right;
-            color: #aaa;
+            color: #888;
+            /* Softer text color */
         }
 
         .time-left {
             float: left;
             color: #999;
+            /* Slightly darker gray text color */
         }
 
         input[type=text],
         select {
             width: 100%;
             padding: 12px 20px;
-            margin: 8px 0;
+            margin: 10px 0;
+            /* Adjusted margin for better spacing */
             display: inline-block;
             border: 1px solid #ccc;
             border-radius: 4px;
@@ -77,31 +96,41 @@
 
         input[type=submit] {
             width: 100%;
-            background-color: #4CAF50;
+            background-color: #3498db;
+            /* Blue submit button background color */
             color: white;
             padding: 14px 20px;
-            margin: 8px 0;
+            margin: 10px 0;
+            /* Adjusted margin for better spacing */
             border: none;
             border-radius: 4px;
             cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            /* Slight box shadow */
         }
 
         input[type=submit]:hover {
-            background-color: #45a049;
+            background-color: #2980b9;
+            /* Darker blue on hover */
         }
 
         .form-container {
-            border-radius: 5px;
-            background-color: #f2f2f2;
+            border-radius: 10px;
+            /* Rounded corners for the form container */
+            background-color: #f5f5f5;
+            /* Light gray form background */
             padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            /* Slight box shadow */
         }
     </style>
+
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"
         integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <h2>{{ room }} - DjChat</h2>
+    <h2>{{ room }}</h2>
 
     <div id="display">
         <!-- Messages will be displayed here -->
